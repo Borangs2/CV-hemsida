@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 13pt;
+    box-sizing: border-box;
+}
+
+:root{
+    --colour-primary: #383434;
+    --colour-secondary: #E2E2E2; 
+}
+
+
+header{
+    display: grid;
+    grid-template-areas: 
+    "h-left none h-right";
+    grid-template-rows: 100%;
+    grid-template-columns: 15vw 70vw 15vw;
+    width: 100%;
+    height: 70px;
+    background-color: var(--colour-primary);
+}
+
+.h-left{
+    grid-area: h-left;
+    background-color: red;
+}
+
+.h-right{
+    grid-area: h-right;
+    background-color: cyan;
+}
+
+
+main{
+    background-color: lightcoral;
+}
+
+
+
+footer{
+    height: 150px;
+    background-color: var(--colour-primary);
+}
