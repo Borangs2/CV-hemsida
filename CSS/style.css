@@ -1,3 +1,5 @@
+@import url("https://fonts.google.com/specimen/Syne+Tactile?category=Display&subset=latin-ext&preview.text=KAI&preview.text_type=custom#standard-styles");
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@
 :root{
     --colour-primary: #383434;
     --colour-secondary: #E2E2E2; 
+    --colour-detail: #3E92CC;
 }
 
 
@@ -28,6 +31,15 @@ header{
 .h-left{
     grid-area: h-left;
     background-color: red;
+}
+
+.bx-palette{
+    color: var(--colour-detail);
+    font-size: 50pt;
+}
+
+.title{
+    font-family: 'Syne Tactile' sans-serif;
 }
 
 .h-right{
