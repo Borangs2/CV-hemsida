@@ -1,11 +1,10 @@
-window.onscroll = function() {sticky_nav()};
 const nav = document.getElementById("nav");
 const sticky = nav.offsetTop;
 
 
 function sticky_nav() {
-    let width = window.innerWidth;
 
+    let width = window.innerWidth;
     if (window.pageYOffset > sticky && width >= 700) {
       nav.classList.add("nav-sticky");
     } else {
@@ -40,6 +39,8 @@ window.onscroll = () => {
     menu_close.classList.add("d-none");
     menu_close.classList.remove("d-inline-block");
     nav.classList.remove("active");
+
+    sticky_nav();
 };
 
 window.onresize = remove_icon;
